@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Sample Homework Page</title>
+   <link rel="stylesheet" href="static/style.css">
+ </head>
+ <body>
+   {% if name %}
+    <h1>The name of this file is {{name}}<h1>
+   {% endif %}
+
+    <header>
+      <nav>
+        <h1>Colleen van Lent</h1>
+        <ul>
+         <li><a href="index" class = "current">Home</a></li>
+         <li><a href="courses" >Courses</a></li>
+         <li><a href="interests" >Interests</a></li>
+         <li><a href="other" >Other</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+      <img src = "static/logos_umsi.png" alt = "UMSI logo"/><h2>Home</h2>Here is where I will put some interesting widgets, but for now, just some pictures.
+
+    </div>
+    {% extends "footer.html" %}
+ </body>
+</html>
